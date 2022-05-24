@@ -1,0 +1,124 @@
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    display: flex;
+    justify-content: center;
+    margin-top: 80px;
+}
+.main{
+    display: flex;
+    border: 1px solid black;
+} 
+
+.p1{
+    padding: 10px 100px 0 20px;
+    border-right: 1px solid black;
+}
+
+.p2{
+    padding: 10px 40px 0 20px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.menu ul{
+    list-style: none;
+}
+
+.menu ul li {
+    margin-top: 15px;  
+}
+
+.menu ul li a{
+    font-size: 18px;
+    color: black;   
+}
+
+.title{
+    margin-bottom: 10px;
+    font-size: 22px;
+    font-family: 'Times New Roman', Times, serif;
+    color: red;
+    font-weight: bold;
+}
+
+table{
+    text-align: center;
+    border-spacing: 0px;
+    border: 0px solid black;
+    
+}
+table tr > *:first-child{
+    border-left: 1px solid black;
+}
+
+table th{
+    border-top: 1px solid black;
+}
+
+table td, table th {
+    border-right: 1px solid black;
+    border-bottom: 1px solid black;
+}
+
+/* độ rộng từng côt */
+tr *:first-child{
+    width: 50px;
+}
+tr *:nth-child(2){
+    width: 150px;
+}
+tr *:nth-child(3){
+    width: 100px;
+}
+tr *:last-child{
+    width: 100px;
+}
+
+tr,th,td{
+    height: 50px;
+}
+
+.data_table table tr{
+    font-size: 18px;
+    font-family: 'Times New Roman', Times, serif;
+} 
+
+.data_table table tr:first-child{
+    background-color: orange;
+    font-size: 18px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+} 
+.data_table table tr td:last-child a{
+    text-decoration: none;
+    font-style: italic;
+    color: black;
+} 
+.data_table table tr td:last-child a:hover{
+    color: red;
+} 
+.container_bt{
+    margin-top: 20px;
+    display: flex;
+    justify-content: flex-end;
+}
+.container_bt a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+.button{
+    width: 80px;
+    height: 50px;
+    background-color: darkorange;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    box-shadow: 2px 2px;
+}

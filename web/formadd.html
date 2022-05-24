@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="title">Thêm sản phẩm</div>
+        <div class="main">
+            <form  method="get" action="addSanPham.jsp">
+                <div class="label">
+                    <p>Tên sản phẩm</p>
+                    <p>Giá SP</p>
+                    <p>Nhóm sản phẩm</p>
+                </div>
+                <div class="inputtxt">
+                    <input type="text" name="tensp" id="">
+                    <input type="text" name="giasp" id="">
+                    <select name="loai" id="">
+                        <option value="Guitars">Guitars</option>
+                        <option value="Basses">Basses</option>
+                        <option value="Drums">Drums</option>
+                    </select>
+                    <input type="submit" value="Thêm">
+                </div>
+            </form>
+        </div>
+    </div>
+    
+</body>
+<style>
+    *{
+        margin: 0px;
+        padding: 0px;
+        font-family: 'Times New Roman', Times, serif;
+    }
+    body{
+        display: flex;
+        justify-content: center;
+    }   
+    .container{
+        margin-top: 80px;
+        width: 380px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border: 1px solid black;
+    }
+    .title{
+        margin-top: 20px;
+        width: 380px;
+        font-size: 22px;
+        text-align: center;
+        font-weight: bold;
+    }
+    .main{
+        width: 380px;
+        height: 230px;
+    } 
+    form{
+        display: flex;
+    }
+    .label{
+        padding-left: 20px;
+        width: 150px;
+    }
+    .label p{
+       margin-top: 25px;
+       font-size: 18px;
+    }
+    .inputtxt *{
+        display: block;
+        margin-top: 21px;
+        font-size: 16px;
+        width: 170px;
+        height: 22px;
+    }
+    .inputtxt select{
+        width: 174px;
+        height: 25px;
+    }
+    .inputtxt input:last-child{
+        background-color: darkorange;
+        width: 70px;
+        height: 40px;
+        font-weight: bold;
+        box-shadow: 2px 2px;
+        float: right;
+        margin-top: 20px;
+    }
+</style>
+</html>
